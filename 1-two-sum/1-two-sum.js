@@ -3,6 +3,8 @@
  * @param {number} target
  * @return {number[]}
  */
+
+// Bruteforce
 var twoSum = function(nums, target) {
     const result = new Set();
     for(let i=0;i<nums.length;i++){
