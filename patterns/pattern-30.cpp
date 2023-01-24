@@ -17,16 +17,26 @@ int main()
     int k = 1;
     while (i <= 10)
     {
-        /* code */
         while (j <= 9)
         {
-            if ()
+            if (i > 5 ? (j >= 6 - k && j <= 4 + k) : (j >= i && j <= 10 - i))
             {
+                if (i % 2 != 0 ? (j % 2 == 0) : (j % 2 != 0))
+                {
+                    cout << " ";
+                }
+                else
+                {
+                    cout << "*";
+                }
+            }
+            else
+            {
+                cout << " ";
             }
             j++;
         }
         i++;
-        i > 5 ? k++ : k;
         j = 1;
         cout << endl;
     }
