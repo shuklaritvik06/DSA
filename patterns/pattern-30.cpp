@@ -1,34 +1,35 @@
-//  * * * * *
-//   * * * *
-//    * * *
-//     * *
-//      *
-//      *
-//     * *
-//    * * *
-//   * * * *
-//  * * * * *
+//    *        *
+//    **      **
+//    ***    ***
+//    ****  ****
+//    **********
+//    ****  ****
+//    ***    ***
+//    **      **
+//    *        *
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
     int i = 1;
     int j = 1;
     int k = 1;
-    while (i <= 10)
+    while (i <= 9)
     {
-        while (j <= 9)
+        /* code */
+        while (j <= 10)
         {
-            if (i > 5 ? (j >= 6 - k && j <= 4 + k) : (j >= i && j <= 10 - i))
+            /* code */
+            if (i > 5 ? (j >= 1 && j <= 6 - k) : (j >= 1 && j <= i))
             {
-                if (i % 2 != 0 ? (j % 2 == 0) : (j % 2 != 0))
-                {
-                    cout << " ";
-                }
-                else
-                {
-                    cout << "*";
-                }
+                /* code */
+                cout << "*";
+            }
+            else if (i > 5 ? (j >= 5 + k && j <= 10) : (j >= 10 - i && j <= 10))
+            {
+                /* code */
+                cout << "*";
             }
             else
             {
@@ -37,6 +38,7 @@ int main()
             j++;
         }
         i++;
+        i > 5 ? k++ : k;
         j = 1;
         cout << endl;
     }

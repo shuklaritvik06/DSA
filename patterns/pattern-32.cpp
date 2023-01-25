@@ -1,49 +1,32 @@
-//    *        *
-//    **      **
-//    * *    * *
-//    *  *  *  *
-//    *   **   *
-//    *   **   *
-//    *  *  *  *
-//    * *    * *
-//    **      **
-//    *        *
 #include <iostream>
 using namespace std;
 int main()
 {
     int i = 1;
     int j = 1;
-    int rows, cols;
-    cin >> rows >> cols;
     int k = 1;
-    while (i <= rows)
+    while (i <= 7)
     {
         /* code */
-        while (j <= cols)
+        i > 4 ? k++ : k;
+        while (j <= 7)
         {
             /* code */
-            if (i > 5 ? (j == 1 || j == (rows / 2) + 1 - k) : (j == 1 || j == i))
+            if (i > 4 ? (j >= k && j <= 8 - k) : (j >= 5 - i && j <= 3 + i))
             {
                 /* code */
                 cout << "*";
             }
-            else if (i > 5 ? (j == (rows / 2) + k || j == rows) : (j == rows + 1 - i || j == rows))
-            {
-                /* code */
-                cout << "*";
-            }
-
             else
             {
                 cout << " ";
             }
             j++;
         }
-        i++;
-        i > 6 ? k++ : k;
         j = 1;
+        i++;
         cout << endl;
     }
+
     return 0;
 }
