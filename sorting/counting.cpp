@@ -44,13 +44,13 @@ int *sort(int *arr, int length)
 }
 int main()
 {
-    int arr[] = {1, 5, 4, 2, 3, 4};
+    int arr[] = {11, 52, 4, 2, 3, 4};
     int *result;
     result = sort(arr, 6);
     for (int i = 0; i < 6; i++)
     {
         /* code */
-        cout << result[i];
+        cout << result[i] << " ";
     }
     return 0;
 }

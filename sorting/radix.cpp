@@ -49,9 +49,5 @@ int main()
 {
     vector<int> arr{121, 432, 564, 23, 1, 45, 788};
     arr = radixSort(arr);
-    for (auto i : arr)
-    {
-        // cout << i << " ";
-    }
     return 0;
 }
