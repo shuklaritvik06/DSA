@@ -1,1 +1,1 @@
-![](/home/ritvik/Downloads/proxy.jpeg)
+![](./assets//image.jpeg)
