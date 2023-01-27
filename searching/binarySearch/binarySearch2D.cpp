@@ -20,9 +20,9 @@ vector<int> binarySearch(vector<vector<int>> &vect, int target)
         {
             c--;
         }
+        return vector<int>{-1, -1};
     }
-
-    return vector<int>{-1, -1};
+    return vector<int>{};
 }
 int main()
 {
@@ -30,7 +30,7 @@ int main()
         {1, 2, 3},
         {4, 5, 6},
         {7, 8, 9}};
-    vector<int> result = binarySearch(vect, 4);
+    vector<int> result = binarySearch(vect, 41);
     cout << "Row: " << result[0] << " "
          << "Col: " << result[1] << endl;
     return 0;
