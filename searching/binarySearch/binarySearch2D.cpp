@@ -6,7 +6,6 @@ int binarySearch(vector<vector<int>> &arr, int target)
     int size = arr.size();
     while ()
     {
-        /* code */
     }
 }
 int main()

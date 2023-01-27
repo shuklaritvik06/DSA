@@ -1,4 +1,5 @@
 #include <iostream>
+// O(n + k) -> Best+Worst+Average
 using namespace std;
 vector<double> sort(vector<double> &arr)
 {
