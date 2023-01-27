@@ -9,8 +9,7 @@ std::vector<double> sort(std::vector<double> &arr)
         for (int i = interval; i < arr.size(); i += 1)
         {
             double temp = arr[i];
-            int j;
-            for (j = i; j >= interval && arr[j - interval] > temp; j -= interval)
+            for (int j = i; j >= interval && arr[j - interval] > temp; j -= interval)
             {
                 arr[j] = arr[j - interval];
             }
