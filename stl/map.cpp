@@ -19,5 +19,14 @@ int main()
     cout << b.empty();
     cout << b.erase("Ritvik");
     b.emplace(pair<string, int>("Ramesh", 2020));
+    map<pair<int, int>, int> mp;
+    map<int, int> a;
+    a[1] = 2;
+    a[2] = 3;
+    a[3] = 4;
+    auto itr = a.lower_bound(2);
+    cout << itr->second;
+    itr = a.upper_bound(2);
+    cout << itr->second;
     return 0;
 }
