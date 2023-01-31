@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-// a<<1 => 2a
 // a<<b=> a*2^b
 // a>>b => a/2^b
 int main()

@@ -47,7 +47,7 @@ vector<int> radixSort(vector<int> &arr)
 }
 int main()
 {
-    vector<int> arr{121, 432, 564, 23, 1, 45, 788};
+    vector<int> arr{121, 432, 564, 23, 1, 1, 45, 788};
     arr = radixSort(arr);
     return 0;
 }
