@@ -14,25 +14,29 @@ void quickSort(vector<int> &arr, int low, int high)
 int partition(vector<int> &arr, int left, int right)
 {
 
-    int i = left;
-    int j = right;
-    int pivot = arr[(left + right) / 2];
+    int i = left - 1;
+    int j = right + 1;
+    int mid = (left + right) / 2;
+    int pivot = arr[mid];
     while (true)
     {
-        while (arr[i] < pivot)
+        do
+        {
             i++;
-        while (arr[j] > pivot)
+        } while (arr[i] < pivot);
+        do
+        {
             j--;
+        } while (arr[j] > pivot);
         if (i >= j)
             return j;
         if (i < j)
             swap(arr[i], arr[j]);
     };
-    return -1;
 }
 int main()
 {
-    vector<int> arr{10, 50, 110, 15, 14, 78, 99, 87, 100};
+    vector<int> arr{10, 7, 8, 9, 5, 4, 3, 2, 6, 10, 20, 14, 15, 105, 135, 146};
     quickSort(arr, 0, arr.size() - 1);
     for (auto i : arr)
     {
