@@ -6,23 +6,16 @@ int partition(vector<int> &arr, int start, int end)
     int pivot = arr[start];
     int i = start;
     int j = end;
-    while (i < j)
+    while (true)
     {
-        while (arr[i] <= pivot)
-        {
+        while (arr[i] < pivot)
             i++;
-        }
         while (arr[j] > pivot)
-        {
             j--;
-        }
-        if (i < j)
-        {
-            swap(arr[i], arr[j]);
-        }
+        if (i >= j)
+            return j;
+        swap(arr[i], arr[j]);
     }
-    swap(arr[start], arr[j]);
-    return j;
 }
 void hoarePartition(vector<int> &arr, int low, int high)
 {

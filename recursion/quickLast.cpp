@@ -3,18 +3,19 @@
 using namespace std;
 int partition(vector<int> &arr, int start, int end)
 {
-    int pivot = arr[start];
     int i = start;
-    for (int j = start + 1; j <= end; j++)
+    int j = end;
+    int pivot = arr[end];
+    while (true)
     {
-        if (arr[j] < pivot)
-        {
+        while (arr[i] < pivot)
             i++;
-            swap(arr[i], arr[j]);
-        }
+        while (arr[j] > pivot)
+            j--;
+        if (i >= j)
+            return j;
+        swap(arr[i], arr[j]);
     }
-    swap(arr[i], arr[start]);
-    return i;
 }
 void quickSort(vector<int> &arr, int low, int high)
 {
@@ -27,7 +28,7 @@ void quickSort(vector<int> &arr, int low, int high)
 }
 int main()
 {
-    vector<int> arr{10, 50, 110, 15, 14, 78, 99, 87, 100};
+    vector<int> arr{10, 9, 11, 14, 13, 12, 10, 7, 8, 9, 10, 20, 13, 1};
     quickSort(arr, 0, arr.size() - 1);
     for (auto i : arr)
         cout << i << " ";
