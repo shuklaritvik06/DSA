@@ -27,7 +27,7 @@ void subseq(string a, string temp, vector<pair<string, vector<int>>> &result, in
 }
 int main()
 {
-    string str = "hey";
+    string str = "babgbag";
     vector<pair<string, vector<int>>> result;
     subseq(str, "", result, 0);
     for (auto i : result)

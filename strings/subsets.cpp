@@ -17,6 +17,7 @@ void subset(vector<int> &arr, vector<vector<int>> &result)
         }
     }
 }
+
 void printResult(vector<vector<int>> &result, string str)
 {
     cout << str << endl;

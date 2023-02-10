@@ -28,7 +28,7 @@ bool powerOf2(int n)
 }
 int main()
 {
-    int a = 8;
+    int a = 0;
     if (__builtin_popcount(a) == 1)
         cout << "Yes";
     else
