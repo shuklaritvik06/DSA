@@ -8,7 +8,6 @@ class Solution:
                 a[i]+=1
             except:
                 a[i]=1
-        print(a)
         for _,val in a.items():
             if val>1:
                 return True
